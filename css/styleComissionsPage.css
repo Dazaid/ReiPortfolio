@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Reddit Mono", monospace;
+    scroll-behavior: smooth !important;
+}
+body{
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.form-group button{
+    color: black;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="radio"] {
+    display: none; /* Ocultar los botones de opción originales */
+}
+.radio-image {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+.radio-image img {
+    width: 50px;
+    height: 50px;
+}
+.form-group input[type="radio"]:checked + .radio-image {
+    border-color: blue; /* Borde azul cuando está seleccionado */
+}
+
+
+
+.form-group input[type="checkbox"] {
+    display: none; /* Ocultar los checkboxes originales */
+}
+.checkbox-image {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+    transition: border-color 0.3s ease;
+}
+.checkbox-image img {
+    width: 50px;
+    height: 50px;
+}
+.form-group input[type="checkbox"]:checked + .checkbox-image {
+    border-color: blue; /* Borde azul cuando está seleccionado */
+}

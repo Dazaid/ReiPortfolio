@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleComissions.css">
+    <title>Comissions</title>
+</head>
+<body>
+    <h1>Comissions</h1>
+    <form action="includes/formhandler.inc.php" method="post">
+        <!-- Campo de texto -->
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- Área de texto -->
+        <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="2"></textarea>
+        </div>
+
+        <!-- Botones de opción -->
+        <div class="form-group">
+            <label>Type</label>
+            
+            <input type="radio" id="portrait" name="type" value="portrait">
+            <label for="portrait" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=portrait" alt="portrait">
+            </label>
+            
+            <input type="radio" id="half-body" name="type" value="half-body">
+            <label for="half-body" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=half-body" alt="half-body">
+            </label>
+            
+            <input type="radio" id="full-body" name="type" value="full-body">
+            <label for="full-body" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=full-body" alt="full-body">
+            </label>
+
+            <input type="radio" id="illustration" name="type" value="illustration">
+            <label for="illustration" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=illustration" alt="illustration">
+            </label>
+
+        </div>
+
+        <div class="form-group">
+            <label>Render</label>
+            
+            <input type="radio" id="sketch" name="render" value="sketch">
+            <label for="sketch" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=sketch" alt="sketch">
+            </label>
+            
+            <input type="radio" id="base-colors" name="render" value="base-colors">
+            <label for="base-colors" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=base-colors" alt="base-colors">
+            </label>
+            
+            <input type="radio" id="simple-shading" name="render" value="simple-shading">
+            <label for="simple-shading" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=simple-shading" alt="simple-shading">
+            </label>
+
+            <input type="radio" id="full-render" name="render" value="full-render">
+            <label for="full-render" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=full-render" alt="full-render">
+            </label>
+
+            <input type="radio" id="surprise-render" name="render" value="surprise-render">
+            <label for="surprise-render" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=surprise-render" alt="surprise-render">
+            </label>
+
+        </div>
+
+        <div class="form-group">
+            <label>Color</label>
+            
+            <input type="radio" id="grayscale" name="color" value="grayscale">
+            <label for="grayscale" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=grayscale" alt="grayscale">
+            </label>
+            
+            <input type="radio" id="monochrome" name="color" value="monochrome">
+            <label for="monochrome" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=monochrome" alt="monochrome">
+            </label>
+
+            <input type="radio" id="full-color" name="color" value="full-color">
+            <label for="full-color" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=full-color" alt="full-color">
+            </label>
+
+            <input type="radio" id="surprise-color" name="color" value="surprise-color">
+            <label for="surprise-color" class="radio-image">
+                <img src="https://via.placeholder.com/50?text=surprise-color" alt="surprise-color">
+            </label>
+
+        </div>
+
+        <!-- Casillas de verificación -->
+        <div class="form-group">
+            <label>Extras</label>
+            
+            <input type="checkbox" id="complex-background" name="extras[]" value="complex-background">
+            <label for="complex-background" class="checkbox-image">
+                <img src="https://via.placeholder.com/50?text=complex-background" alt="complex-background">
+            </label>
+            
+            <input type="checkbox" id="extra-character" name="extras[]" value="extra-character">
+            <label for="extra-character" class="checkbox-image">
+                <img src="https://via.placeholder.com/50?text=extra-character" alt="extra-character">
+            </label>
+
+            <input type="checkbox" id="NSFW" name="extras[]" value="NSFW">
+            <label for="NSFW" class="checkbox-image">
+                <img src="https://via.placeholder.com/50?text=NSFW" alt="NSFW">
+            </label>
+
+            <input type="checkbox" id="fur-scales" name="extras[]" value="fur-scales">
+            <label for="fur-scales" class="checkbox-image">
+                <img src="https://via.placeholder.com/50?text=fur-scales" alt="fur-scales">
+            </label>
+
+            <input type="checkbox" id="mecha" name="extras[]" value="mecha">
+            <label for="mecha" class="checkbox-image">
+                <img src="https://via.placeholder.com/50?text=mecha" alt="mecha">
+            </label>
+
+            <input type="checkbox" id="armor" name="extras[]" value="armor">
+            <label for="armor" class="checkbox-image">
+                <img src="https://via.placeholder.com/50?text=armor" alt="armor">
+            </label>
+
+            <input type="checkbox" id="creature-desing" name="extras[]" value="creature-desing">
+            <label for="creature-desing" class="checkbox-image">
+                <img src="https://via.placeholder.com/50?text=creature-desing" alt="creature-desing">
+            </label>
+
+            <input type="checkbox" id="props" name="extras[]" value="props">
+            <label for="props" class="checkbox-image">
+                <img src="https://via.placeholder.com/50?text=props" alt="props">
+            </label>
+
+            <input type="checkbox" id="reference-sheet" name="extras[]" value="reference-sheet">
+            <label for="reference-sheet" class="checkbox-image">
+                <img src="https://via.placeholder.com/50?text=reference-sheet" alt="reference-sheet">
+            </label>
+            
+        </div>
+
+        <!-- Botón de envío -->
+        <div class="form-group">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</body>
+</html>

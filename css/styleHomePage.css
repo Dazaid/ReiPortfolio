@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Reddit Mono", monospace;
+    scroll-behavior: smooth !important;
+}
+body{
+    background-color: black;
+}
+
+#home{
+    display: flex;
+    justify-content: end;
+
+}
+#menu-selector{
+    background-color: rgba(137, 43, 226, 0.507);
+    height: 100vh;
+    width: 35vw;
+}
+.preview-content{
+    background-color: rgba(165, 42, 42, 0.534);
+    height: 100vh;
+    width: 55vw;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    scrollbar-width: none;
+    scroll-snap-type: y proximity;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.preview-content:hover > :not(:hover){    /*--------Not selected items will be small*/
+    scale: 0.7;
+    transition: 0.3s;
+}
+.preview-img-container{                      /*-------- container of preview image items inside the scroll container*/
+    background-color: rgba(210, 105, 30, 0.788);
+    min-width: 633px; 
+    min-height: 350px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    margin: 10px;
+    position: relative; /* Required for absolute positioning, dont forget*/
+    cursor: pointer; 
+    scale: 0.8;
+}
+
+#preview-selector-container {                     /*--------Container of the selector preview images*/
+    overflow: auto; /* Enable overflow */
+    position: relative; /* Required for absolute positioning of children, dont forget */
+}
+.hovered{
+    scale: 1.1 !important;
+    transition: 0.3s;
+    z-index: 1; /* hovered item into the front */
+    background-color: lightgreen; 
+}
+
