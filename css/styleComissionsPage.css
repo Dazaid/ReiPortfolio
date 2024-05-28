@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    margin: 0;
     color: whitesmoke;
     font-size: 1.2rem;
     text-decoration: none;
@@ -9,19 +9,79 @@
 body{
     background-color: black;
     font-family: Arial, sans-serif;
-    margin: 20px;
 }
+
+.flex-content{
+    display: flex;
+}
+
+.font-small{
+    font-size: 1rem;
+}
+
+.font-medium{
+    font-size: 3rem;
+}
+
+.font-big{
+    font-size: 4rem;
+}
+
+.centered-text{
+    text-align: center;
+}
+.pading-all{
+    padding: 1rem;
+}
+
+.test{
+    background-color: aqua;
+}
+/* -------------------- custom buttons ------------------------*/
+
+.buttons-custom{
+    background-color: black;
+    border: solid white 1px;
+}
+
+/* -------------------- end of base css ------------------------*/
+
+#comissions-tittle{
+    background-color: rgb(45, 0, 48);
+}
+#form{
+    background-color: rgb(21, 21, 21);
+    width: 60vw;
+}
+#preview-totalcomiss-container{
+    width: 40vw;
+    background-color: rgb(14, 3, 11);
+    display: flex;
+    justify-content: center;
+}
+
+#preview-total-img{
+    height: 27rem;
+    width: 30rem;
+}
+#preview-total-img{
+    width: fit-content;
+    height: fit-content;
+}
+
+
+
+
 
 .form-group button{
     color: black;
 }
 .form-group {
     margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
 }
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
+
 .form-group input[type="radio"] {
     display: none; /* Ocultar los botones de opción originales */
 }
