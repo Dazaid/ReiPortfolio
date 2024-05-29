@@ -15,31 +15,35 @@
         <h1 class="font-medium centered-text">Comissions</h1>
     </div>
 <div class="flex-content">
-    <form id="form" action="includes/formhandler.inc.php" method="post">
-        <div class="pading-all">
+    <form id="form" class="centered-center" action="includes/formhandler.inc.php" method="post">  <!--Form in process-->
+    <div class="pading-all carousel">
         <!-- Campo de texto -->
- <div class="flex-content">
-        <div class="centered-text">
-        
+
+        <div class="centered-text carousel-item active">
+            
             <label for="name">Name</label>
+            
             <div class="form-group">
             <input type="text" id="name" name="name" required>
+            <button class="next">></button>
         </div>
-    </div>
-</div>
+    </div> 
         <!-- Área de texto -->
-        <div class="centered-text">
+        <div class="centered-text carousel-item active">
         
             <label for="notes">Notes</label>
             <div class="form-group">
+                <button class="prev">< </button>
             <textarea id="notes" name="notes" rows="2"></textarea>
+            <button class="next">></button>
         </div>
 </div>
         <!-- Botones de opción -->
-        <div class="centered-text">
+        <div class="centered-text carousel-item active">
         
             <label>Type</label>
             <div class="form-group">
+                <button class="prev">< </button>
             <input type="radio" id="portrait" name="type" value="portrait">
             <label for="portrait" class="radio-image">
                 <img src="https://via.placeholder.com/50?text=portrait" alt="portrait">
@@ -59,13 +63,15 @@
             <label for="illustration" class="radio-image">
                 <img src="https://via.placeholder.com/50?text=illustration" alt="illustration">
             </label>
+            <button class="next">></button>
 </div>
         </div>
 
         
-        <div class="centered-text">
+        <div class="centered-text carousel-item active">
             <label>Render</label>
             <div class="form-group">
+                <button class="prev">< </button>
             <input type="radio" id="sketch" name="render" value="sketch">
             <label for="sketch" class="radio-image">
                 <img src="https://via.placeholder.com/50?text=sketch" alt="sketch">
@@ -90,12 +96,14 @@
             <label for="surprise-render" class="radio-image">
                 <img src="https://via.placeholder.com/50?text=surprise-render" alt="surprise-render">
             </label>
+            <button class="next">></button>
             </div>
         </div>
 
-        <div class="centered-text">
+        <div class="centered-text carousel-item active">
             <label>Color</label>
             <div class="form-group">
+                <button class="prev">< </button>
             <input type="radio" id="grayscale" name="color" value="grayscale">
             <label for="grayscale" class="radio-image">
                 <img src="https://via.placeholder.com/50?text=grayscale" alt="grayscale">
@@ -115,14 +123,16 @@
             <label for="surprise-color" class="radio-image">
                 <img src="https://via.placeholder.com/50?text=surprise-color" alt="surprise-color">
             </label>
+            <button class="next">></button>
         </div>
         </div>
 
         <!-- Casillas de verificación -->
        
-        <div class="centered-text">
+        <div class="centered-text carousel-item active">
             <label>Extras</label>
             <div class="form-group">
+                <button class="prev">< </button>
             <input type="checkbox" id="complex-background" name="extras[]" value="complex-background">
             <label for="complex-background" class="checkbox-image">
                 <img src="https://via.placeholder.com/50?text=complex-background" alt="complex-background">
@@ -167,6 +177,7 @@
             <label for="reference-sheet" class="checkbox-image">
                 <img src="https://via.placeholder.com/50?text=reference-sheet" alt="reference-sheet">
             </label>
+            <button class="next">></button>
         </div>
         </div>
 
@@ -187,5 +198,6 @@
     </div>
 </div>
 </div>
+<script src="/scripts/scriptComissionsPage.js"></script>
 </body>
 </html>
