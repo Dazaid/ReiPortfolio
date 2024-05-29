@@ -11,6 +11,12 @@ body{
     font-family: Arial, sans-serif;
 }
 
+.centered-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .flex-content{
     display: flex;
 }
@@ -37,6 +43,31 @@ body{
 .test{
     background-color: aqua;
 }
+
+
+/* -------------------- form carrusel  ------------------------*/
+
+.carousel {
+    /* width: 300px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+}
+/* -------------------- form carrusel end ------------------------*/
 /* -------------------- custom buttons ------------------------*/
 
 .buttons-custom{
@@ -68,6 +99,7 @@ body{
     width: fit-content;
     height: fit-content;
 }
+
 
 
 
