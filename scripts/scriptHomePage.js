@@ -1,4 +1,21 @@
-    // ----------------------- move to hovered item, like scroll with hover and add hovered class------------------------------------
+function softtran() {
+    document.body.classList.add('home-hidden');
+
+            setTimeout(function() {
+                document.body.classList.remove('home-hidden');
+                document.body.classList.add('home-transition');
+                    setTimeout(function() {
+                        document.body.classList.remove('home-transition');
+                    }, 500); 
+            }, 500); 
+
+}
+
+
+
+
+
+// ----------------------- move to hovered item, like scroll with hover and add hovered class------------------------------------
     
     
     // Select the container and all items
